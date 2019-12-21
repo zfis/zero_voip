@@ -14,7 +14,7 @@ class ResUsers(models.Model):
         """
         init_res = super(ResUsers, self).__init__(pool, cr)
         voip_fields = [
-            'onsip_auth_user',
+            'zero_auth_user',
         ]
         # duplicate list to avoid modifying the original reference
         type(self).SELF_WRITEABLE_FIELDS = list(self.SELF_WRITEABLE_FIELDS)
@@ -24,4 +24,4 @@ class ResUsers(models.Model):
         type(self).SELF_READABLE_FIELDS.extend(voip_fields)
         return init_res
 
-    onsip_auth_user = fields.Char("OnSIP authorization User", groups="base.group_user")
+    onsip_auth_user = fields.Char("zero authorization User", groups="base.group_user")

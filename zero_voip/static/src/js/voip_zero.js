@@ -1,4 +1,4 @@
-odoo.define('voip.onsip', function(require) {
+odoo.define('voip.zero', function(require) {
 "use strict";
 
 var VoipUserAgent = require('voip.user_agent');

@@ -2,7 +2,7 @@
 <odoo>
         <template id="assets_backend" name="voip onsip assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
-                <script type="text/javascript" src="/voip_onsip/static/src/js/voip_onsip.js"></script>
+                <script type="text/javascript" src="/zero_voip/static/src/js/voip_zero.js"></script>
             </xpath>
         </template>
 </odoo>
